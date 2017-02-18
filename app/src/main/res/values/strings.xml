@@ -1,3 +1,25 @@
 <resources>
-    <string name="app_name">Warframe DarkSector Credit Farm App</string>
+  <string name="app_name">Warframe DarkSector Credit Farm App</string>
+  <string name="booster_active">Booster active</string>
+  <string name="mission_completed">Mission Completed</string>
+  <string name="_0">0</string>
+  <string name="_15_endo">15 endo</string>
+  <string name="_50_endo">50 Endo</string>
+  <string name="_80_endo">80 Endo</string>
+  <string name="_400_endo">400 endo</string>
+  <string name="_500_credits">500 Credits</string>
+  <string name="_1000_credits">1000 credits</string>
+  <string name="_1500_credits">1500 Credits</string>
+  <string name="_2000_credits">2000 credits</string>
+  <string name="_2500_credits">2500 credits</string>
+  <string name="_3000_credits">3000 credits</string>
+  <string name="mission_credits">Mission credits</string>
+  <string name="add">Add</string>
+  <string name="total_credits">Total credits</string>
+  <string name="total_endo">Total Endo</string>
+  <string name="back">Back</string>
+  <string name="reset">Reset</string>
+  <string name="select_dark_sector_mission">Select Dark Sector mission</string>
+  <string name="select">Select</string>
+  <string name="mission_reward">Mission reward: %1$d</string>
 </resources>

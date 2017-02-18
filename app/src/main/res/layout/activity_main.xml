@@ -1,188 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/activity_main"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                tools:context="com.example.leozhekov.warframedarksectorcreditfarmapp.MainActivity">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_actual"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.leozhekov.warframedarksectorcreditfarmapp.MainActivity">
 
   <LinearLayout
       android:orientation="vertical"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      android:layout_alignParentTop="true"
-      android:layout_alignParentStart="true">
-
-    <CheckBox
-        android:text="Booster active"
+      android:layout_alignParentTop="true" android:layout_alignParentStart="true" android:weightSum="1">
+    <TextView
+        android:text="@string/select_dark_sector_mission"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/boosted"/>
-
-    <LinearLayout
-        android:orientation="horizontal"
+        android:layout_height="wrap_content" android:id="@+id/textView" android:textSize="24sp"
+        android:layout_marginBottom="20dp"/>
+    <Spinner
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp">
-
-      <Button
-          android:text="Mission Count"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:id="@+id/missionCount"
-          android:layout_weight="1"/>
-
-      <TextView
-          android:text="0"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:id="@+id/missionCountText"
-          android:layout_weight="1"
-          android:layout_marginLeft="20dp"
-          android:textSize="24sp"
-          android:layout_marginTop="5dp"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
+        android:layout_height="wrap_content" android:id="@+id/darkSectors" android:layout_weight="0.07"/>
+    <Button
+        android:text="@string/select"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp">
-
-      <Button
-          android:text="400 endo"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:id="@+id/endo"
-          android:layout_weight="1"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp">
-
-      <Button
-          android:text="2000 credits"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:id="@+id/lowCredit"
-          android:layout_weight="1"/>
-
-      <Button
-          android:text="2500 credits"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:id="@+id/medCredit"
-          android:layout_weight="1"/>
-
-      <Button
-          android:text="3000 credits"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:id="@+id/highCredit"
-          android:layout_weight="1"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp">
-
-      <EditText
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:inputType="number"
-          android:ems="10"
-          android:id="@+id/missionCreditText"
-          android:layout_weight="1"
-          android:hint="Mission credits"/>
-
-      <Button
-          android:text="Add"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:id="@+id/missionCredit"
-          android:layout_weight="1"/>
-    </LinearLayout>
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="2dip"
-        android:background="#000000"/>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="10dp">
-
-      <TextView
-          android:text="Total credits"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:id="@+id/textView3"
-          android:layout_weight="1"
-          android:textSize="24sp"/>
-
-      <TextView
-          android:text="0"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:id="@+id/totalCredits"
-          android:layout_weight="1"
-          android:textSize="24sp"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-      <TextView
-          android:text="Total Endo"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:id="@+id/textView6"
-          android:layout_weight="1"
-          android:textSize="24sp"/>
-
-      <TextView
-          android:text="0"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:id="@+id/totalEndo"
-          android:layout_weight="1"
-          android:textSize="24sp"
-          android:layout_marginBottom="10dp"/>
-    </LinearLayout>
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="2dip"
-        android:background="#000000"/>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp">
-
-      <Button
-          android:text="Reset"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:id="@+id/reset"
-          android:layout_weight="1"/>
-    </LinearLayout>
-
+        android:layout_height="wrap_content" android:id="@+id/selectBtn" android:enabled="false"/>
   </LinearLayout>
-
 </RelativeLayout>
